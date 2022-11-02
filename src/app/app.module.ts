@@ -4,10 +4,12 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { MapComponent } from './map.component';
+import { IconComponent } from './icon/icon.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
-  declarations: [AppComponent, MapComponent],
+  declarations: [AppComponent, MapComponent, IconComponent],
   bootstrap: [AppComponent],
+  entryComponents: [IconComponent],
 })
 export class AppModule {}
